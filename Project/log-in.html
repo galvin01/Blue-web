@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Log-in</title>
+        <link rel="stylesheet" href="./log-in.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+        <div class="form_container sing-in-container">
+            <form method="post" action="#" class="form" id="log-in">
+                <h1 class="form_title">Login</h1>
+                <div class="form_input-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form_input" name="username" id="username" maxlength="20" required>
+
+                </div>
+                <div class="form_input-group">
+                    <label for="pass">Password</label>
+                    <input type="Password" class="form_input" name="pass" id="pass" maxlength="20" required>
+                </div>
+                <div class="form_input-group">
+                    <button type="submit" class="form_button">Submit</button>
+                </div>
+ 
+            </form>
+        </div>
+    
+        <div class="form_container sing-up-container">
+            <form  method="post" action="#"  class="form" id="register">
+                <h1 class="form_title">Register</h1>
+                <div class="form_input-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form_input" name="username" id="username" maxlength="20" required>
+
+                </div>
+                <div class="form_input-group">
+                    <label for="pass">Password</label>
+                    <input type="Password" class="form_input" name="pass" id="pass" maxlength="20" required>
+                </div>
+                <div class="form_input-group">
+                    <button type="submit" class="form_button">Submit </button>
+                </div>
+            </form>
+
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome back</h1>
+                    <p>Please log-in your info.</p>
+                    <button class="ghost" id="singIn">Sign In</button>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello there</h1>
+                        <p>New to the site! please register your info here.</p>
+                        <button class="ghost" id="singUp">Sign Up</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="log-in.js"></script>
+    </body>
+</html>
